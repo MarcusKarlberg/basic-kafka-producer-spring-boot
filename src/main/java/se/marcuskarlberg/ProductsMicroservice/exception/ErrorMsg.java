@@ -1,14 +1,9 @@
 package se.marcuskarlberg.ProductsMicroservice.exception;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import lombok.*;
 
 import java.util.Date;
 
 @Builder
-@AllArgsConstructor
-public class ErrorMsg {
-  private final Date timestamp;
-  private final String message;
-  private final String details;
+public record ErrorMsg(Date timestamp, String message, String details) {
 }
