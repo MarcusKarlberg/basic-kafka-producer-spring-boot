@@ -1,4 +1,4 @@
-package se.marcuskarlberg.ProductsMicroservice;
+package se.marcuskarlberg.ProductsMicroservice.model;
 
 import lombok.*;
 

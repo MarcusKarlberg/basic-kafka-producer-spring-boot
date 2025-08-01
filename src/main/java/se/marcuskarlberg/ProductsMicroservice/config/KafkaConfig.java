@@ -1,4 +1,4 @@
-package se.marcuskarlberg.ProductsMicroservice;
+package se.marcuskarlberg.ProductsMicroservice.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,7 @@ import java.util.Map;
 @Configuration
 public class KafkaConfig {
 
-  final static String TOPIC_NAME = "product-created-events-topic";
+  public final static String TOPIC_NAME = "product-created-events-topic";
 
   @Bean
   public NewTopic createTopic() {

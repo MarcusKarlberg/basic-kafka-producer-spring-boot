@@ -1,4 +1,4 @@
-package se.marcuskarlberg.ProductsMicroservice;
+package se.marcuskarlberg.ProductsMicroservice.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import se.marcuskarlberg.ProductsMicroservice.exception.ErrorMsg;
+import se.marcuskarlberg.ProductsMicroservice.model.Product;
+import se.marcuskarlberg.ProductsMicroservice.service.ProductService;
 
 import java.time.Instant;
 import java.util.Date;
