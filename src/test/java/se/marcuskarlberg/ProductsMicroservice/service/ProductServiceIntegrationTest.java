@@ -33,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @DirtiesContext
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @ActiveProfiles("test")
-@EmbeddedKafka(partitions = 3, count = 3, controlledShutdown = true)
+@EmbeddedKafka(partitions = 3, count = 3, controlledShutdown = true) //To start embedded kafka server
 @SpringBootTest(properties = "spring.kafka.producer.bootstrap-servers=${spring.embedded.kafka.brokers}")
 public class ProductServiceIntegrationTest {
 

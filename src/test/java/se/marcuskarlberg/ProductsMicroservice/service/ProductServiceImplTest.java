@@ -29,7 +29,7 @@ public class ProductServiceImplTest {
   }
 
   @Test
-  void createProduct_shouldSendEventAndReturnProductId() {
+  void createProduct_shouldSendEventAndReturnProductId() throws Exception {
     Product product = Product.builder()
       .title("Test Product")
       .price(BigDecimal.valueOf(99.99))
